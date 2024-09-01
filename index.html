@@ -8,32 +8,38 @@
     <title>Personal Portfolio</title>
   </head>
   <body>
-    <nav>
-    <h2 id="logo">Lexus' Brown Portfolio</h2>
-    <ul class="navigation-items">
-      <li class="navigation-item"><a href="#about-me">About Me</a></li>
-      <li class="navigation-item"><a href="./projects.html">Projects</a></li>
-      <li class="navigation-item"><a href="#skills">Skills</a></li>
-      <li class="navigation-item"><a href="./contact.html">Contact</a></li>
-    </ul>
-    </nav>
+    <header>
+      <h1 id="logo">Lexus' Brown Portfolio</h1>
+      <nav class="nav-bar">
+        <ul class="navigations">
+          <li class="navigation-items"><a href="#about-me">About Me</a></li>
+          <li class="navigation-items"><a href="./projects.html">Projects</a></li>
+          <li class="navigation-items"><a href="#skills">Skills</a></li>
+          <li class="navigation-items"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
   <main>
     <section id="about-me">
       <div class="about-me-container">
         <div class="about-me-text-container">
-          <h2>About Me</h2>
-          <p>
+          <h2 class="about-me-header">LEXUS</h2>
+          <p class="about-me-text">
             My name is Lexus Sallah-Brown. I am a 24 year old developer in training. 
           </p>
-          <p>
+          <p class="about-me-text">
             I am currently studying a Mathematics and Economics degree at Aston University.
           </p>
-          <p>
+          <p class="about-me-text">
             I was born in the UK but when I was really young, my parents decided to move to Ghana and that's where I grew up.
           </p>
-          <p>
+          <p class="about-me-text">
             As a self taught developer, it can be tricky when trying to get in a field where there are so many geniuses that code, but that can't stop me from becoming a developer myself.
+          </p>
+          <p class="about-me-text">
+            I've been learning to be a developer now for: 
+            <span id="time-container">0</span> years!
           </p>
         </div>
         <img src="./Resources/Images/IMG_2365.jpeg" alt="Photo of Lexus" class="portrait"/>
@@ -52,6 +58,8 @@
     </section>
   </main>
 
-  <footer class="footer">Made with <span class="heart">♥</span> in London</footer>
+  <footer class="footer">LEXUS <span class="heart">♥</span></footer>
   </body>
+
+  <script type="text/javascript" src="./Resources/JS/main.js"></script>
 </html>
