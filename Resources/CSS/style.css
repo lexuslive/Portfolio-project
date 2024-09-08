@@ -32,14 +32,14 @@ header {
 .navigation-items {
   margin: 0 5px;
   list-style: none;
-  color: black;
+  color: #161A1E;
   text-decoration: none;
   font-size: 0.9rem;
 }
 
 .navigation-items:hover {
   color: #FDFBFF;
-  transition: color 0.3s ease-in;
+  transition: color 0.25s ease-in;
 }
 
 /* Syling for the main body of the docment */
@@ -50,4 +50,54 @@ main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+/* Styling for About me section of webpage */ 
+.about-me {
+  display: grid;
+  position: relative;
+  grid-template-areas: 
+    "h2 h2"
+    "img p";
+  grid-template-columns: 400px 450px;
+  grid-template-rows: auto 400px;
+  justify-content: space-between;
+}
+
+.about-me-header {
+  grid-area: h2;
+  width: 100%;
+  text-align: center;
+  font-size: 20vw;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.portrait {
+  grid-area: img;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.about-me-text {
+  grid-area: p;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-me-text p {
+  font-size: 14px;
+}
+
+.project {
+  font-size: 18px;
+  text-decoration: none;
+  color: #161A1E;
+}
+
+.project:hover {
+  color: #FDFBFF;
+  transition: color 0.25s ease-in;
 }
