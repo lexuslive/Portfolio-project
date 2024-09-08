@@ -59,7 +59,7 @@ main {
   grid-template-areas: 
     "h2 h2"
     "img p";
-  grid-template-columns: 400px 450px;
+  grid-template-columns: 400px 500px;
   grid-template-rows: auto 400px;
   justify-content: space-between;
 }
@@ -93,11 +93,33 @@ main {
 
 .project {
   font-size: 18px;
-  text-decoration: none;
+  text-decoration: underline;
   color: #161A1E;
 }
 
 .project:hover {
   color: #FDFBFF;
   transition: color 0.25s ease-in;
+}
+
+/* Styling for Skills section of webpage */ 
+#skills {
+  margin: 0 20px;
+}
+
+#skills h2 {
+  font-size: 2rem;
+}
+
+.skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.skills-container > * {
+  font-size: 2em;
+  width: 2em;
 }
