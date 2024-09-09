@@ -1,9 +1,9 @@
-html {
+html, body {
   scroll-behavior: smooth;
-  background-color: #E3D3C4;
+  background-color: #D9CBBF;
   color: #161A1E;
   font-family: 'Roboto';
-  height: 100%;
+  margin: 0; padding: 0;
 }
 
 header {
@@ -16,7 +16,7 @@ header {
   position: fixed;
   top: 0%;
   z-index: 2;
-  background-color: #E3D3C4;
+  background-color: #D9CBBF;
 }
 
 #logo {
@@ -39,14 +39,14 @@ header {
 
 .navigation-items:hover {
   color: #FDFBFF;
-  transition: color 0.25s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 /* Syling for the main body of the docment */
 main {
   position: relative;
   top: 60px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -59,9 +59,9 @@ main {
   grid-template-areas: 
     "h2 h2"
     "img p";
-  grid-template-columns: 400px 500px;
+  grid-template-columns: 400px auto;
   grid-template-rows: auto 400px;
-  justify-content: space-between;
+  margin: 0 20px;
 }
 
 .about-me-header {
@@ -76,12 +76,11 @@ main {
 .portrait {
   grid-area: img;
   width: 100%;
-  padding: 0px 20px;
 }
 
 .about-me-text {
   grid-area: p;
-  padding: 0px 40px;
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -99,7 +98,7 @@ main {
 
 .project:hover {
   color: #FDFBFF;
-  transition: color 0.25s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 /* Styling for Skills section of webpage */ 
@@ -116,10 +115,44 @@ main {
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .skills-container > * {
   font-size: 2em;
   width: 2em;
+}
+
+/* Styling for footer section of webpage */ 
+.footer {
+  position: relative;
+  bottom: -130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  background-color: #734E38;
+  color: #D9CBBF;
+  width: 100%;
+}
+
+.heart {
+  color: #ff8c00;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-text {
+    padding-bottom: 20px;
+    width: 450px;
+  }
+
+  .portrait {
+    width: 450px;
+  }
 }
