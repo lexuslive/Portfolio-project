@@ -147,6 +147,25 @@ main {
   padding: 0 10px;
 }
 
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background-color: #734E38;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#scrollTopBtn:hover {
+  background-color: #555;
+}
+
 /* For responsive design for the Homepage*/
 @media only screen and (max-width: 700px) {
   .about-me {
@@ -197,8 +216,22 @@ main {
   width: 50%;
 }
 
-.project-description:hover {
-  text-: none;
+/* Styling for the Contacts Page*/
+
+#contact {
+  position: relative;
+  top: 69px;
+  padding: 20px;
 }
 
-/* Styling for the Contacts Page*/
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.contacts a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 2em;
+}
