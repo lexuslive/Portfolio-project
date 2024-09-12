@@ -195,13 +195,13 @@ main {
 
 .project {
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
   color: #161A1E;
 }
 
 .project:hover {
   color: #161A1E;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .project-title {
