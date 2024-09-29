@@ -214,6 +214,13 @@ main {
 
 .project-image {
   width: 50%;
+  margin-bottom: 20px;
+  border: 1px solid #161A1E;
+}
+
+.project-video {
+  width: 50%;
+  border: 1px solid #161A1E;
 }
 
 /* Styling for the Contacts Page*/
